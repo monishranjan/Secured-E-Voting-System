@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@color/light_grey">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/border1"
+        android:layout_gravity="center">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_candidate_register_head"
+            android:layout_marginTop="30dp"
+            android:text="Candidate Register"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/editText_candidate_name"
+            android:hint="Candidate Name"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            android:padding="6dp"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/textView_candidate_register_head"
+            android:background="@drawable/border"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_register_gender"
+            android:layout_below="@id/editText_candidate_name"
+            android:text="Gender*"
+            android:textColor="#555555"
+            android:padding="6dp"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/editText_candidate_gender"
+            android:hint="Gender"
+            android:textSize="16sp"
+            android:padding="6dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/editText_candidate_name"
+            android:background="@drawable/border"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/editText_candidate_party_name"
+            android:hint="Party Name"
+            android:textSize="16sp"
+            android:padding="6dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/editText_candidate_gender"
+            android:background="@drawable/border"/>
+
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="90dp"
+            android:layout_below="@id/editText_candidate_party_name"
+            android:layout_marginTop="40dp"
+            android:id="@+id/button_registerCandidate"
+            android:text="Register"
+            app:cornerRadius="20dp"/>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:elevation="10dp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</ScrollView>
