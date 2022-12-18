@@ -1,6 +1,6 @@
 # Secured-E-Voting-System
 
-This app is made in Android Studio by using Java and Google Firebase Cloud Service.
+This app is made in Android Studio by using Java and Google Firebase Cloud Service.\n
 Below are all of the screenshots of the app how it looks
 
 ![SS3](https://user-images.githubusercontent.com/38453844/208300411-4a1ca5d4-3924-4232-b8b9-7295ff59af27.png)
